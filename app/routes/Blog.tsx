@@ -1,6 +1,6 @@
 /* Layout Route  */
 import { Outlet } from '@remix-run/react';
-import { LinksFunction } from '@remix-run/react/dist/routeModules';
+import type { LinksFunction } from '@remix-run/react/dist/routeModules';
 import styles from 'highlight.js/styles/github-dark-dimmed.css';
 
 
@@ -14,5 +14,14 @@ export const links:LinksFunction = () =>{
 };
 
 export default function  Blog(){
-    return  <Outlet />;
-}
+    return (
+        <div className="flex justify-center">
+            <div className="prose lg:prose-xl py-10">
+                <Outlet />;
+            </div>
+        </div>
+    ) 
+    
+    
+    
+};

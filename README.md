@@ -1,2 +1,3 @@
 # my_blog
- A  Markdown Blog with Remix JS 
+
+A Simple  **Markdown** Blog with **Remix jS** , Styling with **TailwindCss**
